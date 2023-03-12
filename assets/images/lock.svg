@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="48" height="48" viewBox="0 0 256 256" xml:space="preserve">
+<rect xmlns="http://www.w3.org/2000/svg" width="256" height="256" fill="#242938" rx="60"/>
+<g transform="matrix(6.16 0 0 6.16 128 128)"  >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(124,124,125); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-12, -12)" d="M 17 11 L 17 7 C 17 4.243 14.756 2 12 2 C 9.242 2 7 4.243 7 7 L 7 11 C 5.897 11 5 11.896 5 13 L 5 20 C 5 21.103 5.897 22 7 22 L 17 22 C 18.103 22 19 21.103 19 20 L 19 13 C 19 11.896 18.103 11 17 11 Z M 12 18 C 11.172 18 10.5 17.328 10.5 16.5 C 10.5 15.672 11.172 15 12 15 C 12.828 15 13.5 15.672 13.5 16.5 C 13.5 17.328 12.828 18 12 18 Z M 15 11 L 9 11 L 9 7 C 9 5.346 10.346 4 12 4 C 13.654 4 15 5.346 15 7 L 15 11 Z" stroke-linecap="round" />
+</g>
+</svg>
