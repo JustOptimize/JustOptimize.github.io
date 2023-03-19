@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/main.css">
     <script src="/assets/js/desc.js" defer></script>
+    <script src="/assets/js/projects.js" defer></script>
     <title>Oggetto</title>
 </head>
 <body>
@@ -45,9 +46,11 @@
             </div>
 
             <p>My projects:</p>
-            <div class="icons projects">
+            <div id="projects" class="icons">
                 <!-- this time use an svg -->
-                <a href="https://github.com/JustOptimize/return-ShowHiddenChannels"><img src="/assets/images/lock.svg" title="ShowHiddenChannels"></a>
+                <a><img src="/assets/images/lock.svg" title="ShowHiddenChannels" onclick="showDesc('ShowHiddenChannels')"></a>
+                <a><img src="/assets/images/PrHevinia.png" title="Project Hevinia" onclick="showDesc('Project Hevinia')"></a>
+
             </div>
             
             <p>How to reach me:</p>
@@ -57,6 +60,16 @@
                 <a href="https://github.com/JustOptimize"><img src="https://skillicons.dev/icons?theme=dark&i=github" title="GitHub"></a>
                 <a href="https://www.instagram.com/justoptimize.dll/"><img src="https://skillicons.dev/icons?theme=dark&i=instagram" title="Instagram"></a>
             </div>
+        </div>
+
+        <div id="popup">
+            <div>
+                <h2 id="prTitle"></h2>
+                <p id="prDesc"></p>
+                <div id="prLink"></div>
+            </div>
+
+            <img id="prImg">
         </div>
     </main>
 </body>
