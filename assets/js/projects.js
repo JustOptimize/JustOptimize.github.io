@@ -16,13 +16,25 @@ const Projects = [
 			}
 		],
 
-		img: 'https://user-images.githubusercontent.com/54294419/225766894-48d40546-ed7a-4794-888f-f0aafba26100.png',
+		img: 'https://user-images.githubusercontent.com/54294419/225766894-48d40546-ed7a-4794-888f-f0aafba26100.png'
 	},
 	{
 		title: 'Project Hevinia',
-		links: [],
 		description: 'Developed by a group of schoolmates, this 2D platformer game represents the hard work and creativity of its developers. Unfortunately, for various reasons, the game will never be released. In the game, players would have controlled a character on a journey through various environments, facing challenging obstacles and enemies along the way.',
-		img: 'https://media.discordapp.net/attachments/872913652171300875/1087142768612221139/image.png?width=1214&height=682',
+		links: [],
+		img: 'https://media.discordapp.net/attachments/872913652171300875/1087142768612221139/image.png?width=1214&height=682'
+	},
+	{
+		title: 'RandomPasswordGenerator',
+		description: 'A simple password generator that allows users to generate random passwords with a length of their choice. The passwords are generated using the characters A-Z, a-z and 0-9.',
+		links: [
+			{
+				name: 'GitHub',
+				icon: 'https://skillicons.dev/icons?theme=dark&i=github',
+				link: 'https://github.com/JustOptimize/RandomPassGenerator'
+			}
+		],
+		img: 'https://user-images.githubusercontent.com/54294419/226312261-d35eaf66-da25-4b4b-9920-821f5ee163a1.png'
 	}
 ]
 
