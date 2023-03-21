@@ -32,9 +32,46 @@ const Projects = [
 				name: 'GitHub',
 				icon: 'https://skillicons.dev/icons?theme=dark&i=github',
 				link: 'https://github.com/JustOptimize/RandomPassGenerator'
+			},
+			{
+				name: 'Download',
+				icon: 'https://skillicons.dev/icons?theme=dark&i=bash',
+				link: 'https://raw.githubusercontent.com/JustOptimize/RandomPassGenerator/main/randomPass.bat'
 			}
 		],
 		img: 'https://user-images.githubusercontent.com/54294419/226312261-d35eaf66-da25-4b4b-9920-821f5ee163a1.png'
+	},
+	{
+		title: 'MySQL Backup Tool',
+		description: 'A simple tool that allows users to backup their MySQL databases. The tool is written in batch and uses the mysqldump command to backup the databases.',
+		links: [
+			{
+				name: 'GitHub',
+				icon: 'https://skillicons.dev/icons?theme=dark&i=github',
+				link: 'https://github.com/JustOptimize/MySQL-Backup-Tool/'
+			},
+			{
+				name: 'Download',
+				icon: 'https://skillicons.dev/icons?theme=dark&i=bash',
+				link: 'https://raw.githubusercontent.com/JustOptimize/MySQL-Backup-Tool/main/Backup.bat'
+			}
+		]
+	},
+	{
+		title: 'Pc Cleaner',
+		description: 'PC Cleaner is a simple tool to clean your PC from junk files. It is written in Python and uses a configuration file to determine which files/directories or registry keys to delete.',
+		links: [
+			{
+				name: 'GitHub',
+				icon: 'https://skillicons.dev/icons?theme=dark&i=github',
+				link: 'https://github.com/JustOptimize/Pc-Cleaner'
+			},
+			{
+				name: 'Download',
+				icon: 'https://skillicons.dev/icons?theme=dark&i=python',
+				link: 'https://github.com/JustOptimize/Pc-Cleaner/archive/refs/heads/main.zip'
+			}
+		]
 	}
 ]
 
@@ -45,7 +82,14 @@ function showDesc(prTitle){
 	// Set project attributes
 	document.getElementById("prTitle").innerHTML = prTitle;
 	document.getElementById("prDesc").innerHTML = project.description;
-	document.getElementById("prImg").src = project.img;
+
+	let img = document.getElementById("prImg");
+	if(project.img){
+		img.src = project.img;
+		img.style.display = "block";
+	}else{
+		img.style.display = "none";
+	}
 
 	// Set links
 	document.getElementById("prLink").innerHTML = "";
