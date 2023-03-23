@@ -115,7 +115,9 @@ only screen and (max-height: 600px){
     background-color: #141a24;
     border-radius: 5px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    
     align-items: center;
+    justify-content: center;
 
     display: none;
 }
