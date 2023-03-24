@@ -55,7 +55,8 @@ const Projects = [
 				icon: 'https://skillicons.dev/icons?theme=dark&i=bash',
 				link: 'https://raw.githubusercontent.com/JustOptimize/MySQL-Backup-Tool/main/Backup.bat'
 			}
-		]
+		],
+		img: 'https://user-images.githubusercontent.com/54294419/226584109-bbb7ef7a-8472-4674-af60-a33b48c79b45.png'
 	},
 	{
 		title: 'Pc Cleaner',
