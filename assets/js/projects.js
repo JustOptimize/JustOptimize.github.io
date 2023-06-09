@@ -92,7 +92,7 @@ const Projects = [
 	},
 	{
 		title: 'oSupport',
-		description: 'A website that allows staff members to fill out custom forms managed by a template that are then sent to a Discord server via webhook.<br><br>The website was created for an anti-bullying association but is being converted into a generic website capable of sending forms and messages, managing pages, staff, discord roles, etc.',
+		description: 'A website that allows staff members to fill out forms and perform other routine actions via HTML pages. These pages are based on JSON templates that can be edited by privileged users. It integrates with Discord to assign roles when staff members accept meetings or issue warnings and to schedule meetings when a user wants.<br><br>Originally designed for an anti-bullying association, the website is now a versatile platform for form submissions, messaging, and comprehensive management functionalities.',
 		links: [],
 
 		icon: "/assets/images/oSupport.png",
@@ -175,7 +175,7 @@ Projects.forEach(project => {
 
 	// Prelaod image
 	if(!project.img) return;
-	
+
 	let preload = document.createElement("img");
 	preload.src = project.img;
 });
