@@ -80,7 +80,7 @@ const Projects = [
 			}
 		],
 
-		icon: "/assets/images/Pc-Cleaner.png",
+		icon: "/assets/images/PC-Cleaner.png",
 	},
 	{
 		title: 'Evos Roleplay',
