@@ -101,6 +101,7 @@ only screen and (max-height: 600px){
 
 .icons > a > img {
     width: 48px;
+    cursor: pointer;
 }
 
 #popup {
