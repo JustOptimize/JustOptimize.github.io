@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
 
 :root {
-    background-color: #080b10;
+    background-color: rgb(10, 10, 13);
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    /* --gradient-blur: 100px; */
+    --gradient-blur: 170px;
+    --opacity: 0.1;
 }
 
 body {
@@ -16,6 +20,33 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.gradient {
+    position: fixed;
+    width: 100vw;
+    height: 100vmax;
+    z-index: -1;
+    
+    /* background-image: linear-gradient(-45deg, #ffffff, rgb(10 10 13), #ffffff); */
+    background-image: linear-gradient(-45deg, #ffffff 0%, rgb(10,10,13) 30% 70%, #ffffff 100%);
+    filter: blur(var(--gradient-blur));
+
+    opacity: var(--opacity);
+
+    will-change: opacity;
+
+    animation: blur-pulse 5s infinite;
+}
+
+@keyframes blur-pulse {
+    0%, 100% {
+        filter: blur(var(--gradient-blur));
+    }
+    
+    50% {
+        filter: blur(calc(var(--gradient-blur) * 1.2));
+    }
 }
 
 main {
@@ -44,27 +75,14 @@ a:hover {
     color: #f54272;
 }
 
-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vmax;
-    z-index: -1;
-
-    object-fit: cover;
-
-    filter: blur(5px);
-    -webkit-filter: blur(5px);
-
-    transition: 1s opacity;
-    opacity: 0.5;
-}
-
 /* If user on mobile device make .bio 100% the height of the screen */
 /* same thing if mobile device is in landscape mode */
 @media only screen and (max-width: 600px),
 only screen and (max-height: 600px){
+    :root {
+        --opacity: 0.5;
+    }
+
     :root,
     body {
         align-items: normal;
@@ -96,6 +114,10 @@ only screen and (max-height: 600px){
 
     #prImg {
         max-width: 100% !important;
+    }
+
+    .gradient {
+        animation: none;
     }
 }
 
