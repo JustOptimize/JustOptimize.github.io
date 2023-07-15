@@ -31,12 +31,10 @@ body {
     /* background-image: linear-gradient(-45deg, #ffffff, rgb(10 10 13), #ffffff); */
     background-image: linear-gradient(-45deg, #ffffff 0%, rgb(10,10,13) 30% 70%, #ffffff 100%);
     filter: blur(var(--gradient-blur));
-
     opacity: var(--opacity);
-
     will-change: opacity;
 
-    animation: blur-pulse 5s infinite;
+    /* animation: blur-pulse 5s infinite; */
 }
 
 @keyframes blur-pulse {
@@ -45,7 +43,7 @@ body {
     }
     
     50% {
-        filter: blur(calc(var(--gradient-blur) * 1.2));
+        filter: blur(calc(var(--gradient-blur) * 1.35));
     }
 }
 
@@ -80,7 +78,7 @@ a:hover {
 @media only screen and (max-width: 600px),
 only screen and (max-height: 600px){
     :root {
-        --opacity: 0.5;
+        --opacity: 0.2;
     }
 
     :root,
