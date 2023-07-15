@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
 
 :root {
-    background-color: rgb(10, 10, 13);
+    background-color: #15181d;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     
-    /* --gradient-blur: 100px; */
     --gradient-blur: 170px;
     --opacity: 0.1;
 }
