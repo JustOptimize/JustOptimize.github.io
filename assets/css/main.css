@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
 
 :root {
-    background-color: #15181d;
+    background-color: #20262f;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     
     --gradient-blur: 170px;
-    --opacity: 0.1;
+    --opacity: 0.2;
 }
 
 body {
@@ -28,7 +28,7 @@ body {
     z-index: -1;
     
     /* background-image: linear-gradient(-45deg, #ffffff, rgb(10 10 13), #ffffff); */
-    background-image: linear-gradient(-45deg, #ffffff 0%, rgb(10,10,13) 30% 70%, #ffffff 100%);
+    background-image: linear-gradient(-45deg, #ffffff 0%, rgba(10, 10, 13, 0) 30% 70%, #ffffff 100%);
     filter: blur(var(--gradient-blur));
     opacity: var(--opacity);
     will-change: opacity;
@@ -72,12 +72,11 @@ a:hover {
     color: #f54272;
 }
 
-/* If user on mobile device make .bio 100% the height of the screen */
-/* same thing if mobile device is in landscape mode */
+/* If user on mobile device portrait mode or landscape mode */
 @media only screen and (max-width: 600px),
 only screen and (max-height: 600px){
     :root {
-        --opacity: 0.2;
+        --opacity: 0.4;
     }
 
     :root,
@@ -121,6 +120,9 @@ only screen and (max-height: 600px){
 .icons > a > img {
     width: 48px;
     cursor: pointer;
+
+    -webkit-mask-image: url(../images/icons/mask.png);
+    mask-image: url(../images/icons/mask.png);
 }
 
 #popup {
