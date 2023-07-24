@@ -9,6 +9,7 @@
     
     --gradient-blur: 170px;
     --opacity: 0.2;
+    --filter_shadow: drop-shadow(0 0 2px rgb(0 0 0 / 15%));
 }
 
 body {
@@ -123,6 +124,15 @@ only screen and (max-height: 600px){
 
     -webkit-mask-image: url(../images/icons/mask.png);
     mask-image: url(../images/icons/mask.png);
+
+}
+
+.icons > a {
+    /* Shadow */
+    -webkit-filter: var(--filter_shadow);
+    -moz-filter: var(--filter_shadow);
+    -ms-filter: var(--filter_shadow);
+    -o-filter: var(--filter_shadow);
 }
 
 #popup {
