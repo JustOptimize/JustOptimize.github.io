@@ -116,6 +116,10 @@ only screen and (max-height: 600px){
     .gradient {
         animation: none;
     }
+
+    .icons > a > img {
+        margin: 2px;
+    }
 }
 
 .icons > a > img {

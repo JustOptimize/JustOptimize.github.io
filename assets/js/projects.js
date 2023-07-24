@@ -96,7 +96,7 @@ const Projects = [
 	{
 		title: 'Evos Roleplay',
 		date: 'Apr 2023 - Jun 2023',
-		description: 'A FiveM roleplay server I worked on for a few months, it was a great learning experience especially when it comes to Lua and SQL.<br><br>The main objectives were to create a unique server that was as optimized as possible, while still having a lot of features and a good looking UI.<br><br>Unfortunately, the server was never released due to a lack of time and motivation by the other team members responsible for the creation of the assets (vehicles, clothes, etc.).',
+		description: 'A FiveM roleplay server I worked on for a few months, it was a great learning experience especially when it comes to Lua and SQL.<br><br>The main objectives were to create a unique server that was as optimized as possible, while still having a lot of features and a good looking UI.',
 		links: [],
 
 		icon: "/assets/images/icons/EvosRp.png",
