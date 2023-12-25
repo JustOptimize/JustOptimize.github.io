@@ -126,8 +126,8 @@ only screen and (max-height: 600px){
     width: 48px;
     cursor: pointer;
 
-    -webkit-mask-image: url(../images/icons/mask.png);
-    mask-image: url(../images/icons/mask.png);
+    -webkit-mask-image: url(../images/mask.png);
+    mask-image: url(../images/mask.png);
 
 }
 
