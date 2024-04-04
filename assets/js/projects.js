@@ -264,14 +264,7 @@ function showDesc(prTitle){
 
 // Add a listener to to close the popup when the user clicks outside of it
 window.addEventListener("click", function(event) {
-	if (
-		event.target != document.getElementById("popup") &&
-		!document.getElementById("popup").contains(event.target) &&
-		!document.getElementById("projects").contains(event.target)
-	) {
-
-		document.getElementById("popup").style.display = "none";
-	}
+	document.getElementById("popup").style.display = "none";
 })
 
 // Add projects to the page
