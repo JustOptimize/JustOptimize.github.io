@@ -275,6 +275,8 @@ Projects.forEach(project => {
 	let icon = document.createElement("img");
 	icon.src = project.icon;
 	icon.title = project.title;
+	icon.style.width = "48px";
+	icon.style.height = "48px";
 
 	icon.addEventListener("click", function(){
 		showDesc(project.title);
