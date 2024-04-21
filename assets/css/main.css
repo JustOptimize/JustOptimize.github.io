@@ -127,6 +127,9 @@ only screen and (max-height: 600px){
 
     -webkit-mask-image: url(../images/mask.png);
     mask-image: url(../images/mask.png);
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
 
 }
 
