@@ -180,6 +180,26 @@ var Projects = [
 		icon: "/assets/images/icons/FiveLogs.png",
 		img: '/assets/images/banners/FiveLogs.png'
 	},
+	{
+		title: 'CleanCopy',
+		dateStart: new Date(2023, 9, 1),
+		dateEnd: null,
+		description: 'A userscript that removes tracking parameters from copied URLs.',
+		links: [
+			{
+				name: 'GitHub',
+				icon: 'https://skillicons.dev/icons?theme=dark&i=github',
+				link: 'https://github.com/JustOptimize/CleanCopy'
+			},
+			{
+				name: 'Download',
+				icon: 'https://skillicons.dev/icons?theme=dark&i=js',
+				link: 'https://raw.githubusercontent.com/JustOptimize/CleanCopy/main/CleanCopy.user.js'
+			}
+		],
+
+		icon: "https://github.com/JustOptimize/CleanCopy/blob/main/icon.png?raw=true",
+	}
 ]
 
 // Sort projects by date (if end is null put them first ordered by start date (oldest first) and then by end date (newest first)
