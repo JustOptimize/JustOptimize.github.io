@@ -89,7 +89,7 @@ only screen and (max-height: 600px){
     }
 
     .bio {
-        height: 100vh;
+        height: 100vmin;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -97,7 +97,7 @@ only screen and (max-height: 600px){
     }
 
     .other {
-        height: 100vh;
+        height: 100vmin;
         display: flex;
         flex-direction: column;
         justify-content: center;
