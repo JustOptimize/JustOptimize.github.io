@@ -135,6 +135,7 @@ only screen and (max-height: 600px){
 
 .icons > a {
     /* Shadow */
+    filter: var(--filter_shadow);
     -webkit-filter: var(--filter_shadow);
     -moz-filter: var(--filter_shadow);
     -ms-filter: var(--filter_shadow);
